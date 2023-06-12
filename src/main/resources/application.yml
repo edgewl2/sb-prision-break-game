@@ -1,1 +1,36 @@
+spring:
+  application:
+    name: prision-break-game
+  r2dbc:
+    url: r2dbc:${custom.database.url}
+    username: postgres
+    password: admin
+  flyway:
+    url: jdbc:${custom.database.url}
+    user: ${spring.r2dbc.username}
+    password: ${spring.r2dbc.password}
+    enabled: true
+    baseline-on-migrate: true
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:${custom.database.url}
 
+springdoc:
+  version: 1.0.0
+  api-docs:
+    groups:
+      enabled: true
+    path: /prison-break-game-doc/v3/api-docs
+  swagger-ui:
+    path: /prison-break-game-doc/swagger-ui.html
+
+server:
+  servlet:
+    context-path: /
+  error:
+    include-message: always
+
+custom:
+  host: "localhost"
+  database:
+    url: postgresql://${custom.host}:5432/prison_break_game
