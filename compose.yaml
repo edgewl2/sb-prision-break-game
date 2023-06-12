@@ -1,9 +1,40 @@
+version: '3.9'
+
 services:
   postgres:
     image: 'postgres:latest'
+    restart: always
     environment:
-      - 'POSTGRES_DB=mydatabase'
-      - 'POSTGRES_PASSWORD=secret'
-      - 'POSTGRES_USER=myuser'
+      - 'POSTGRES_DB=prison_break_game'
+      - 'POSTGRES_PASSWORD=postgres'
+      - 'POSTGRES_USER=postgres'
     ports:
-      - '5432'
+      - '5432:5432'
+    volumes:
+      - postgres_data:/data/db
+    networks:
+      - my_network
+
+  api:
+    image: edgewl2/prison_break-game:latest
+    depends_on:
+      - postgres
+    build: .
+    container_name: prison-break-game-ctn
+    ports:
+      - "8081:8080"
+    networks:
+      - my_network
+    environment:
+      DB_PASSWORD: postgres
+      DB_USER: postgres
+      HOST: postgres
+#      DB_URL: jdbc:postgresql://postgres:5432/prison_break_game
+
+volumes:
+  postgres_data:
+
+networks:
+  my_network:
+    driver: bridge
+

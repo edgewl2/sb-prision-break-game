@@ -1,19 +1,24 @@
+custom:
+  host: ${HOST}
+  database:
+    url: postgresql://${custom.host}:5432/prison_break_game
+
 spring:
   application:
     name: prision-break-game
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:${custom.database.url}
   r2dbc:
     url: r2dbc:${custom.database.url}
-    username: postgres
-    password: admin
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
   flyway:
     url: jdbc:${custom.database.url}
     user: ${spring.r2dbc.username}
     password: ${spring.r2dbc.password}
     enabled: true
     baseline-on-migrate: true
-  datasource:
-    driver-class-name: org.postgresql.Driver
-    url: jdbc:${custom.database.url}
 
 springdoc:
   version: 1.0.0
@@ -29,8 +34,3 @@ server:
     context-path: /
   error:
     include-message: always
-
-custom:
-  host: "localhost"
-  database:
-    url: postgresql://${custom.host}:5432/prison_break_game
