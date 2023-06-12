@@ -15,8 +15,8 @@ spring:
     password: ${DB_PASSWORD}
   flyway:
     url: jdbc:${custom.database.url}
-    user: ${spring.r2dbc.username}
-    password: ${spring.r2dbc.password}
+    user: ${DB_USER}
+    password: ${DB_PASSWORD}
     enabled: true
     baseline-on-migrate: true
 
