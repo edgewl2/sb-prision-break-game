@@ -36,6 +36,8 @@ dependencies {
     annotationProcessor("org.projectlombok:lombok")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("io.projectreactor:reactor-test")
+    testImplementation("com.h2database:h2")
+    testImplementation("io.r2dbc:r2dbc-h2:1.0.0.RELEASE")
     testImplementation("org.spockframework:spock-core:2.4-M1-groovy-3.0")
     testImplementation("org.spockframework:spock-spring:2.4-M1-groovy-3.0")
 }
