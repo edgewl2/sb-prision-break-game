@@ -58,7 +58,7 @@ Con anterioridad debe haber instalado los elementos requeridos ya mencionados, l
 > - Clone el repositorio.
 >
 > ```bash
-> git clone https://github.com/edgewl2/sb-prison-break-game.git
+> git clone -b dev https://github.com/edgewl2/sb-prison-break-game.git
 > ```
 > 
 > - Prepare una base de datos para la aplicación.
