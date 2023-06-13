@@ -12,7 +12,7 @@ import org.springframework.data.relational.core.mapping.Column;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Score {
+public class Summary {
 
     @Column("escape_success")
     private int successfulEscape;

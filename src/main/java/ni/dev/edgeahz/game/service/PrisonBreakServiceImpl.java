@@ -37,10 +37,10 @@ public class PrisonBreakServiceImpl implements PrisonBreakService {
     public Mono<PrisonBreakReportResponse> status() {
 
         return registerRepository.getReportEscape()
-                .flatMap(score -> Mono.just(PrisonBreakReportResponse.builder()
-                                .countSuccessfulEscape(score.getSuccessfulEscape())
-                                .countUnsuccessfulEscape(score.getFailureEscape())
-                                .ratio(BigDecimal.valueOf((float) score.getSuccessfulEscape() / score.getTotal())
+                .flatMap(summary -> Mono.just(PrisonBreakReportResponse.builder()
+                                .countSuccessfulEscape(summary.getSuccessfulEscape())
+                                .countUnsuccessfulEscape(summary.getFailureEscape())
+                                .ratio(BigDecimal.valueOf((float) summary.getSuccessfulEscape() / summary.getTotal())
                                         .setScale(1, RoundingMode.HALF_EVEN)
                                         .floatValue())
                                 .build()));
