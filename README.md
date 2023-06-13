@@ -4,7 +4,7 @@ _Proyecto de reto de desarrollo de API con el juego de fuga de prisión._
 
 ## Demo
 
-![Demo](https://user-images.githubusercontent.com/20669949/245198716-06ffe4f0-8956-49ee-aaf2-4e20278ce304.mp4)
+![Demo](https://user-images.githubusercontent.com/20669949/245322753-3ac0ddff-2208-4e99-9606-154832465033.gif)
 
 Imagina que un personaje desea salir de un sitio donde se encuentra como una casa desconocida, un laberinto o una prisión. Si tiene un mapa pero no sabe ¿Cuál es la ruta correcta que le llevará a la salida?... ten por seguro que a través de este juego sabrás si puede escapar del lugar o no.
 
@@ -45,7 +45,7 @@ La aplicación tiene las siguientes funciones:
 Para la ejecución del proyecto se requiere como mínimo:
 - [Git](https://git-scm.com/downloads) - Git es un sistema de control de versiones distribuido de código abierto y gratuito.
 - [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html) - Java es un lenguaje de programación multiplataforma robusto.
-- [PostgreSQL](https://www.postgresql.org/download/)
+- [PostgreSQL](https://www.postgresql.org/download/) - Simplemente Postgres para darle un nombre más pintoresco, es un sistema de código abierto de administración de bases de datos.
 - [Docker](https://www.docker.com/get-started/) - Docker es una plataforma de software que le permite crear, probar e implementar aplicaciones rápidamente.
 - [Visual Studio Code](https://code.visualstudio.com/download) - Visual Studio Code es un editor de código fuente multiplataforma desarrollado por Microsoft. (Puede usarse también cualquier IDE tales como IntelliJ IDEA, Eclipse, etc...).
 
@@ -98,13 +98,3 @@ Ahora podemos probar la aplicación localmente usando cualquier cliente, sino pu
 >```bash
 > /prison-break-game-doc/swagger-ui.html
 > ```
-
-
-
-
-
-
-
-
-
-
