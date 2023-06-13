@@ -4,9 +4,11 @@ _Proyecto de reto de desarrollo de API con el juego de fuga de prisión._
 
 ## Demo
 
-![Demo](https://user-images.githubusercontent.com/20669949/245322753-3ac0ddff-2208-4e99-9606-154832465033.gif)
-
 Imagina que un personaje desea salir de un sitio donde se encuentra como una casa desconocida, un laberinto o una prisión. Si tiene un mapa pero no sabe ¿Cuál es la ruta correcta que le llevará a la salida?... ten por seguro que a través de este juego sabrás si puede escapar del lugar o no.
+
+Ven y prueba a través de la **[Demo](http://18.221.160.65/prison-break-game-doc/webjars/swagger-ui/index.html)**.
+
+![Demo](https://user-images.githubusercontent.com/20669949/245322753-3ac0ddff-2208-4e99-9606-154832465033.gif)
 
 ### Características y pruebas
 
