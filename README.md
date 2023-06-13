@@ -51,27 +51,29 @@ Para la ejecución del proyecto se requiere como mínimo:
 
 ### Instrucciones de instalación local
 
-#### 1. Manual
-
-Con anterioridad debe haber instalado los elementos requeridos ya mencionados, luego:
+Para realizar este proceso lo primero que debemos hacer a través de la terminal del sistema o una herramienta como [GitHub Desktop](https://desktop.github.com/), es descargar el proyecto para luego realizar cualquiera de las opciones de instalación. Por ello se hace lo siguiente:
 
 > - Clone el repositorio.
 >
 > ```bash
 > git clone -b dev https://github.com/edgewl2/sb-prison-break-game.git
 > ```
-> 
+>
 > - Prepare una base de datos para la aplicación.
 > ```bash
 > prison_break_game
 > ```
 > **NOTA:** Si cambia el nombre deberá modificar las propiedades del proyecto en el archivo **application.yml**.
-> 
+>
 > - Acceder al directorio raíz del proyecto desde la terminal.
 > ```bash
 > cd sb-prison-break-game/
 > ```
->
+
+#### 1. Manual
+
+Habiendo instalado los elementos requeridos ya mencionados, se procede desde la terminal con los siguiente comandos:
+
 > - Construir el archivo .jar a ejecutar.
 > ```bash
 > HOST=<localhost> DB_USER=<usuario> DB_PASSWORD=<clave> ./gradlew build
@@ -84,7 +86,7 @@ Con anterioridad debe haber instalado los elementos requeridos ya mencionados, l
 
 #### 2. Automático
 
-Solo usando Docker Compose
+Para esto requiere instalar Docker Compose.
 
 > - Ejecutar el comando desde la terminal.
 > ```bash
