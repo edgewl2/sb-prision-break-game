@@ -78,7 +78,7 @@ Habiendo instalado los elementos requeridos ya mencionados, se procede desde la 
 
 > - Construir el archivo .jar a ejecutar.
 > ```bash
-> HOST=<localhost> DB_USER=<usuario> DB_PASSWORD=<clave> ./gradlew build
+> ./gradlew build
 > ```
 > 
 > - Ejecutar el archivo usando el comando.
